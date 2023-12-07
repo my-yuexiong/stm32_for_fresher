@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"oled1.1\startup_stm32f103xb.o"
+"oled1.1\main.o"
+"oled1.1\gpio.o"
+"oled1.1\i2c.o"
+"oled1.1\stm32f1xx_it.o"
+"oled1.1\stm32f1xx_hal_msp.o"
+"oled1.1\stm32f1xx_hal_gpio_ex.o"
+"oled1.1\stm32f1xx_hal_i2c.o"
+"oled1.1\stm32f1xx_hal.o"
+"oled1.1\stm32f1xx_hal_rcc.o"
+"oled1.1\stm32f1xx_hal_rcc_ex.o"
+"oled1.1\stm32f1xx_hal_gpio.o"
+"oled1.1\stm32f1xx_hal_dma.o"
+"oled1.1\stm32f1xx_hal_cortex.o"
+"oled1.1\stm32f1xx_hal_pwr.o"
+"oled1.1\stm32f1xx_hal_flash.o"
+"oled1.1\stm32f1xx_hal_flash_ex.o"
+"oled1.1\stm32f1xx_hal_exti.o"
+"oled1.1\stm32f1xx_hal_tim.o"
+"oled1.1\stm32f1xx_hal_tim_ex.o"
+"oled1.1\system_stm32f1xx.o"
+"oled1.1\oled.o"
+--strict --scatter "OLED1.1\OLED1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "OLED1.map" -o OLED1.1\OLED1.1
